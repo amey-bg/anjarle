@@ -1,0 +1,473 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Anjarle Website</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+<!--   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">-->
+   <link rel="stylesheet" type="text/css" href="font_awesome\css\font-awesome.min.css">
+   <link rel="stylesheet" type="text/css" href="responsive_new.css">
+     <!--<link rel="stylesheet" type="text/css" href="apple.css">-->
+   <!--for back to top-->
+   <link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">
+		<link href="css/backTop.css" rel="stylesheet" type="text/css" />
+        <!--lightbox-->
+        	<!-- Add jQuery library -->
+	<script type="text/javascript" src="lib/jquery-1.10.1.min.js"></script>
+	
+	<!-- This js file will only be useful in mobile for hiding or showing extra paragraphs... -->
+	<script type="text/javascript" src="show_text.js"></script>
+	
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+
+			// Set custom style, close if clicked, change title type and overlay color
+			$(".fancybox-effects-c").fancybox({
+				wrapCSS    : 'fancybox-custom',
+				closeClick : true,
+
+				openEffect : 'none',
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					overlay : {
+						css : {
+							'background' : 'rgba(238,238,238,0.85)'
+						}
+					}
+				}
+			});
+
+		
+
+			/*
+			 *  Button helper. Disable animations, hide close button, change title type and content
+			 */
+
+			$('.fancybox-buttons').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+
+
+			
+			
+		});
+	</script>
+        <!--lightbox end--></head>
+	<!--resp menu-->
+    <!--[if lte IE 8]><link rel="stylesheet" href="../../responsive-nav.css"><![endif]-->
+    <!--[if gt IE 8]><!--><link rel="stylesheet" href="css/styles_menu.css"><!--<![endif]-->
+    <script src="js/responsive-nav.js"></script>
+    <!--resp menu end-->
+<body>
+
+<!-- ***** Wrapper Container ***** -->
+<section> 
+<div id="wrapper"> 
+<!--responsive menu goes here-->
+        <!--    <div id="menu_mobile">
+              <div role="navigation" id="foo" class="nav-collapse">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about_anjarle">About</a></li>
+				<li><a href="#amenities">Amenities</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  <div role="main" class="main">
+      <a href="#nav" class="nav-toggle">Menu</a>
+      </div>
+    <script>
+      var navigation = responsiveNav("foo", {customToggle: ".nav-toggle"});
+    </script>
+            
+            </div> -->
+						
+		<div id="menu_btn">
+			<span id="menu_title"><span id="icon" name="lines">&#9776;</span></span>
+			<div class="clr_float"></div>
+		</div>
+		<div id="mobile">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#about_anjarle">About</a></li>
+				<li><a href="#amenities">Amenities</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul> 
+		</div>
+		
+		
+<script type="text/javascript">
+	$(document).ready(function(){
+		
+		function smooth_scroll(){
+		
+			$('a[href^="#"]').on('click', function(e){
+			
+				// this will store the href value of currently clicked link...
+				var target = $(this).attr('href');
+				// this will stop the default behavior of <a> tag to jump from the one place to another...
+				e.preventDefault();
+				
+				var pos = $(target).offset().top;
+				var par = $(this).parents('div#mobile');
+								
+				if($(par).attr('id') === 'mobile')
+				{	
+					$('#mobile').slideUp(400);
+					$('#menu_btn #icon').html('&#9776;');
+					$('#menu_btn #icon').attr({'name' : 'lines'});
+				}
+				
+				$('html, body').stop().animate({
+					scrollTop : pos
+				}, 1300);
+				
+			});
+		} // smooth_scroll function ends here..
+		
+		// Responsive Menubar...
+		$('#menu_btn #icon').click(function(){
+			
+			
+			if(($('#menu_btn #icon').attr('name')) == 'lines')
+			{
+				$('#mobile').slideDown(400);
+				$('#menu_btn #icon').html('&#10006;');
+				$('#menu_btn #icon').attr({'name' : 'close'});
+			}
+			else if(($('#menu_btn #icon').attr('name')) == 'close')
+			{
+				$('#mobile').slideUp(400);
+				$('#menu_btn #icon').html('&#9776;');
+				$('#menu_btn #icon').attr({'name' : 'lines'});
+			}
+		}); 
+		
+		smooth_scroll();
+	
+	});
+
+</script>
+						
+            <!--rsponsive menu end-->
+		
+	
+	<header>
+	<div id="top">
+	
+	<div class="main_outer">
+	
+		<div class="main_content">
+		
+		<div class="left_side">
+		
+			<div id="logo"><a href="#"><img src="images/Logo.png"  /></a></div>
+			
+		</div>
+		
+		<div class="right_side">
+				
+			<div id="menu">
+			<ul>
+				<li><a href="#top" style="background: rgba(255,255,255,0.5); color: #336633;"><i class="fa fa-home icon_size" aria-hidden="true"></i> </a></li>
+				<li><a href="#about_anjarle">About</a></li>
+				<li><a href="#amenities">Amenities</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+			
+			</div>
+        <h2 class="tagline">Invest for a brighter tomorrow</h2>
+			</div>
+		
+		<div style="clear: both;"></div>
+		</div> <!-- main_content ends... -->
+	
+	</div> <!-- main_outer ends... -->
+	
+	</div> <!-- top ends... -->
+	</header>
+<!-- ******************************************************************************* -->
+
+	<div id="about_anjarle">
+		<div class="main_outer">
+		
+			<div class="main_content">
+			
+			<div class="left_side">
+			<h1>About<br /><span class="color_text">77 @ Anjarle</span></h1>
+			<p>Anjarle is one of the finest places in konkan having all basic facilities. Just 18 km from Dapoli, Anjarle has a clean, unspoiled beach with white sand & is surrounded by coconut trees.</p>
+			<p>77 @ Anjarle is not just a 9 acre cluster of fully developed N.A. plots but is also blessed with scenic beauty. It's a soothing getaway where you can rejuvenate and enjoy with your family & friends. An investment that will never let you down.</p>
+			
+            <!-- Updated on 23_Sep_16 by Amey -->
+            <h6><a href="anjarle_legal_doc.zip" target="_blank">Download Legal Docs <i class="fa fa-download icon_space" aria-hidden="true"></i></a></h6>
+            <!---------------------------------->
+            
+			</div>
+			
+			<div class="right_side">
+			<!--<a class="fancybox-buttons" data-fancybox-group="button" href="images/anjarle_plot.png">	<img src="images/anjarle_plot.png" /></a>-->
+      <!--<a class="fancybox-buttons" data-fancybox-group="button" href="images/77 @ ANJARLE01.jpg">	<img src="images/77 @ ANJARLE01.jpg" class="wd"/></a>-->
+					<a class="fancybox-buttons" data-fancybox-group="button" href="images/77-@-ANJARLE011.jpg">	<img src="images/77-@-ANJARLE011.jpg" class="wd"/></a>
+			</div>
+
+			<div style="clear: both;"></div>
+			
+			</div> <!-- main_content ends... -->
+	
+		</div> <!-- main_outer ends... -->
+	
+	</div><!-- About Anjarle Ends here... -->
+
+<!-- ******************************************************************************* -->
+
+<div id="about_kwalicon">
+	<div class="main_outer">
+	
+		<div class="main_content">
+		
+			<div class="left_side">
+			
+			<div id="left_box1">
+					<img src="images/kwalicon_logo.jpg" />
+			</div>
+			<div id="left_box2">
+				<h1>About<br /><span class="color_text">Kwalicon<br />Ventures</span></h1>
+			</div>
+			
+			</div> <!-- left side div ends ... -->
+		
+			<div class="right_side">
+			
+				<div id="right_box1">
+					<p class="about_kwalicon_text color_text">Quality and professionalism characterize KWALICON VENTURES. With a name that is stepped in the principle of quality constructions, KWALICON VENTURES engages in construction, redevelopment and land development operations. KWALICON VENTURES also provides construction allied services in the most standardized manner you can hope for based in Pune. We are a firm dedicated to well tailor the construction process to suit the needs of each individual property that is consigned to us for development.</p>
+					
+					<p class="about_kwalicon_text color_text diff_para hidden_text">It is only the best that we deliver.</p>
+					<p class="about_kwalicon_text hidden_text">The first brick of KWALICON VENTURES was laid in the year 2003. Ever since, our endeavor to create quality in construction has been underway full swing. In this tempest of new age construction ventures KWALICON VENTURES is a company running on principle of quality management for client confidence.</p>				
+				</div>
+				<div id="right_box2">
+					<p class="about_kwalicon_text hidden_text">With its reins in the able hands of Kedar Borkar, KWALICON VENTURES is making headway to carve its unparalleled niche in the Construction Industry. Equipped with skilled professional, commitment to quality and an insatiable urge for excellence KWALICON VENTURES builds an edifice for pioneering twenty-first century construction.</p>
+					<p class="about_kwalicon_text color_text diff_para hidden_text">Against a competitive backdrop, only the fittest can survive.</p>
+					<p class="about_kwalicon_text hidden_text">We believe that KWALICON VENTURES is the best bet to serve you in the realty trade. At KWALICON VENTURES, quality defines the essence of our operations. Our team is high profile, and give stems from a storehouse of unparalleled experience and a profound knowledge of the industry. This is not just our USP - it is our identity.</p>
+					<p class="about_kwalicon_text hidden_text">Take us on board, and let the projects experience the face-lift.</p>
+				
+				<!-- added by amey on 14-Aug-16... -->
+					<span id="btn" onClick="show_text();">Read More</span>
+				</div>
+				
+				<div style="clear:both;"></div> 
+				
+			</div> <!-- right side div ends ... -->
+			
+			<div style="clear: both;"></div>
+		
+		</div> <!-- main_content ends... -->
+
+	</div> <!-- main_outer ends... -->
+	
+</div> <!-- About Kwalicon Ends here... -->
+
+<!-- ******************************************************************************* -->
+
+<div id="amenities">
+	<div class="main_outer">
+	
+		<div class="main_content">
+			<div id="amenities_text">
+				<h2>Amenities</h2>
+			</div>
+				
+				<div id="amenities_list_items">
+				
+					<div class="amenities_box1">
+						<ul class="list">
+							<li><span class="color_list">Decorative Front Gate Arch</span></li>
+							<li><span class="color_list">Wide Tar Roads</span></li>
+							<li class="last_amenity_item"><span class="color_list">Individually Fenced Plots</span></li>
+						</ul>
+					</div>
+					<div class="amenities_box2">
+						<ul class="list">
+							<li><span class="color_list">Well Lit Internal Roads</span></li>
+							<li><span class="color_list">Gated Community</span></li>
+						</ul>
+					</div>	
+					<div class="amenities_box3">	
+						<ul class="list">
+							<li><span class="color_list">Landscaped Garden</span></li>
+							<li><span class="color_list">Provision For Water & Electricity</span></li>
+						</ul>
+					</div>
+					
+					<div style="clear: both;"></div>
+				</div>	<!-- amenities_list_items ends here... -->
+				
+		</div> <!-- main_content ends... -->
+	
+  </div> <!-- main_outer ends... -->
+	
+</div> <!-- amenities ends... -->
+
+<!-- ******************************************************************************* -->
+
+<div id="gallery">
+	<div class="main_outer">
+	
+		<div class="main_content">
+			
+		<div class="left_side">
+			<h2>Gallery</h2>
+		</div>
+	
+		<div class="right_side">
+		
+			<div id="img_container">	
+
+			<a class="fancybox-buttons" data-fancybox-group="button" href="images/image_1.jpg"><img src="images/image_1.jpg" /></a>
+			<a class="fancybox-buttons" data-fancybox-group="button" href="images/image_2.jpg"><img src="images/image_2.jpg" /></a>
+			<a class="fancybox-buttons" data-fancybox-group="button" href="images/image_3.jpg"><img src="images/image_3.jpg" /></a>
+			<a class="fancybox-buttons" data-fancybox-group="button" href="images/image_4.jpg"><img src="images/image_4.jpg" /></a>
+				
+				<div style="clear:both;"></div>
+		
+			</div> <!-- Img container ends.. -->
+		
+		</div> <!-- right side ends.. -->
+		<div style="clear: both;"></div>
+		
+		</div>  <!-- main_content ends... -->
+		
+	</div>	<!-- main_outer ends... -->
+	
+</div> <!-- gallery ends... -->
+
+<!-- ******************************************************************************* -->
+
+<div id="contact">
+	<div class="main_outer">
+	
+		<div class="main_content">
+
+		<div class="left_side">
+			<h2 class="color_text">Contact</h2>
+			<p>Site Address : <br />Survey No. 131/16, 131/18, 131/24,<br />Anjarle.<br />Tal - Dapoli.<br />Dist - Ratnagiri.</p>
+			<p>Email : <br /><a href="mailto:kedarborkar@gmail.com">kedarborkar@gmail.com</a></p>
+			<p>Mobile No : <br />+91 9822522855</p>
+
+		</div> <!-- left side ends.. -->
+		
+		<div class="right_side">
+			<img src="images/map.svg" />
+		</div> <!-- right side ends.. -->
+
+		<div style="clear: both;"></div>
+
+		</div> <!-- main_content ends... -->
+	
+	</div> <!-- main_outer ends... -->
+	 
+</div> <!-- Contact ends... -->
+
+<!-- ******************************************************************************* -->
+
+<footer>
+	<div id="bottom">
+	<div class="main_outer">
+	
+		<div class="main_content">
+		
+		<div class="left_side">
+		<!-- <img src="images/footer_logo_small.png" /> -->
+		<img src="images/footer_logo.png" width="225px" height="221px"/>
+		</div>
+		
+		<div class="right_side">
+
+		<div id="footer_menu">
+			<ul>
+				<li><a href="#top">Home</a></li>
+				<li><a href="#about_anjarle">About</a></li>
+				<li><a href="#amenities">Amenities</a></li>
+				<li><a href="#gallery">Gallery</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</div>
+		
+		</div> <!-- right side ends ... -->
+		
+		<div style="clear: both;"></div>
+		
+		<div id="copy_text">
+		<p>Disclaimer: (a) Please note that this website was prepared prior to all necessary Government consents being obtained & commencement of construction. (b) The imagery used in the brochure is indicative of style only. (c) The photograph of the surrounding views & locations are taken from other projects within 77@Anjarle & may have been digitally enhanced or altered & do not represent actual views or surrounding views. These photographs are indicative only. (d) Changes may be done during the development & dimensions, fittings & specifications are subject to change without notice. Fittings & finishes are subject to availability & vendor discretion. (e) The information contained here is believed to be correct but is not guaranteed. (f) Prospective purchasers should make & must rely on their own enquiries. (g) This website is a guid only & does not constitute an offer or contact. </p>
+		</div>
+		
+		</div> <!-- main_content ends... -->
+	
+	</div> <!-- main_outer ends... -->
+	
+	</div>
+</footer>
+	
+</div> <!-- Wrapper Ends... -->
+</section> 
+ <a id='backTop'></a>
+       <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>-->
+        <script src="src/jquery.backTop.min.js"></script>
+        <script>
+            $(document).ready( function() {
+                $('#backTop').backTop({
+                    'position' :500,
+                    'speed' : 500,
+                    'color' : 'red',
+                });
+            });
+        </script>
+<!--- ************************** ---->
+</body>
+</html>
+
+

@@ -1,0 +1,1866 @@
+
+@charset="utf-8";
+
+/** Color used 
+*** Dark Green - #336633
+*** Radium green - #99cc33 **/
+
+/*********************************************************************************************************/
+									/********** For max-width: 1280px; **********/
+/*********************************************************************************************************/
+
+@media screen and (min-width:1025px) and (max-width:1280px)
+{
+
+@font-face {
+  font-family: 'stymie_md_btmedium';
+  src: url('font/stymiem_0-webfont.woff2') format('woff2'),
+  url('font/stymiem_0-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'sapientsansregularregular';
+  src: url('font/sapisrg_0-webfont.woff2') format('woff2'),
+  url('font/sapisrg_0-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'sapientsansmediumregular';
+  src: url('font/sapism_1-webfont.woff2') format('woff2'),
+  url('font/sapism_1-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{ margin: 0px; padding: 0px; }
+
+body{ text-align: center; }
+
+#wrapper{ width: 100%; height: auto; background-color: #FFF; margin: 0px auto; }
+
+.icon_size{ font-size: 17px;}
+
+.clr_float{ clear: both;}
+
+/************************* Top Section Styles *************************/
+
+#top{ 
+	width: 100%; 
+/*	height: 700px;*/
+	/******* Updated on 23_Sep_16 by Amey ***/
+	height: auto;
+	  padding-bottom: 26%;
+	/****************************************/ 
+	background-image: url('images/banner_100.svg'); 
+	background-size: 100%;
+	background-repeat: no-repeat; 
+	position: relative;
+	z-index: 100;
+}
+.main_outer{ 
+	width: 95%; 
+	height: auto; 
+	background-color: /*#234*/; 
+	margin: 0px auto; 
+}
+.main_content{ 
+	width: 85%; 
+	height: auto; 
+	background-color: /*#456*/; 
+	margin: 0px auto;  
+}
+.left_side{ 
+	width: 30%;
+	height: auto;
+	background-color: /*#567*/;
+	float: left;
+}
+.right_side{ 
+	width: 65%; 
+	height: auto; 
+	background-color: /*#786*/; 
+	float: right; 
+}
+#logo{ 
+	width: 65%; 
+	height: auto; 
+	background-color: ; 
+	margin-top: 81px; /* 11.6% ;*/
+}
+#logo img{ width:241px;}
+#menu{ 
+	width: 100%; 
+	height: auto; 
+	margin-top: 14.1%; 
+	display: block;
+}
+#menu ul{ list-style-type: none; overflow: hidden; }
+
+#menu ul li{ float: left; width: 20%; }
+
+#menu ul li a{  
+	text-decoration: none; 
+	display: block; 
+	text-transform: uppercase; 
+	background-color: #336633; 
+	color: #fff; 
+	transition: all 0.4s ease; 
+	font-size: 17.99px; 
+	font-family: 'sapientsansmediumregular';
+	padding: 20px 0px;  
+	text-align: center; 
+}
+#menu_mobile{
+	display: none;
+	width: 100%;
+	background-color: #99cc33;
+	height: 50px;
+}
+.active{ 
+	display:inline-block;
+	background: rgba(255,255,255,0.5); 
+	color: #336633;
+	padding: 20px 0px;
+}
+
+#menu ul li a:hover{ 
+	color: #336633; 
+	background-color: rgba(255,255,255,0.5); 
+	transition: all 0.4s ease;
+}
+.tagline{display:none;}
+
+
+/*************************************************************/
+
+/**********************************************************************/
+
+/************************* About Section Styles *************************/
+
+#about_anjarle{ 
+	width: 100%; 
+	height: auto; 
+	background-color: #fff;
+	padding-bottom: 60px;
+}
+#about_anjarle h1{ 
+	text-align: left; 
+	font-size: 47.98px; 
+	font-weight: normal; 
+	font-family: 'stymie_md_btmedium'; 
+	color: #336633; 
+	/*margin: 145px 0px 32px 0px;*/ /* 21.5% 0% 2.1% 0%; */
+	margin: 80px 0px 32px 0px; /*** Updated on 23_Sep_16 by Amey ***/
+	line-height: 50px;
+}
+#about_anjarle p{	
+	width: 87%; 
+	font-size: 17.99px; 
+	line-height: 20px; 
+	text-align: left; 
+	font-family: 'sapientsansregularregular';
+	margin: 4.1% 0.5%;
+}
+
+/************ Updated on 23_Sep_16 by Amey ****/
+
+#about_anjarle h6{
+	font-weight: normal;
+	font-size: 17px;
+	font-family: 'sapientsansregularregular'; 
+	padding: 5px 0px 0px 0px;
+	background-color: ;
+	/*margin: ;*/
+	
+}
+#about_anjarle h6 a{
+	color: #333;
+	background-color: #99cc33;
+	display: block;
+	width: 200px;
+	text-align: center;
+	padding: 10px 5px;
+	transition: all 0.6s ease;
+	border-radius: 2px;
+	margin:0;
+}
+.icon_space{
+	padding-left: 2%;
+}
+#about_anjarle h6 a:hover{
+	background-color: #336633;
+	color: #fff;
+}
+
+/**********************************************/
+
+.color_text{ color: #99cc33;}
+
+#about_anjarle img{	
+	float: right; 
+	margin-top: 61px; 
+	margin-right: 63px; /* 3.3% */ 
+}
+.wd{width:80%;}
+/**********************************************************************/
+
+/************************* About Kwalicon Styles *************************/
+
+#about_kwalicon{ 
+	width: 100%; 
+	height: auto; 
+	/*background-color: #336633;*/ 
+	background-image: url('images/kwalicon_bg.svg');
+	background-size: 100%;
+	background-repeat: no-repeat; 
+}
+#left_box1{ 
+	width: 100%; 
+	height: auto; 
+	background-color: /*#99cc33*/; 
+	float: left;
+}
+#left_box2{ 
+	width: 100%; 
+	height: auto; 
+	background-color: /*#336633*/; 
+	float: left;
+ height:50%;
+}
+#left_box1 img{	float: left;	width:60%; margin: 60px 0px; /* 8.8% 0%; */ }
+
+.hidden_text{ display: block;}
+#btn{ display: none;}
+
+#left_box2 h1{	
+	text-align: left; 
+	font-size: 48px; 
+	font-weight: normal; 
+	font-family: 'stymie_md_btmedium';  
+	color: #fff; 
+	margin: 118px 0px 90px 0px; /* 17.4% 0% 13.2% 0%; */
+	line-height: ;
+}
+#right_box1{	
+	width: 45%; 
+	height: auto; 
+	background-color: ; 
+	float: left; 
+	margin-top: 8.7%; 
+	color: #fff;
+}
+#right_box2{	
+	width: 45%; 
+	height: auto; 
+	background-color: ; 
+	float: right; 
+	margin-top: 8.7%; 
+	color: #fff;
+}
+.about_kwalicon_text{ 
+	width: ; 
+	text-align: left; 
+	font-family: 'sapientsansregularregular';
+	font-size: 17.99px; 
+	line-height: 20px; 
+	margin-bottom: 5%; 
+}
+.diff_para{	font-family: 'stymie_md_btmedium'; }
+
+/**********************************************************************/
+
+/************************* Amenities Section Styles *************************/
+
+#amenities{ 
+	width: 100%; 
+	height: auto; 
+	background-color: #99cc33;
+	background-image:url('images/amenities_bg.svg');
+	background-repeat:no-repeat;
+	background-size: cover;	
+}
+#amenities_text{ 
+	text-align: left; 
+	background-color: ; 
+	padding: 200px 0px 61px 0px; 
+	margin: ; 
+}
+#amenities_text h2{	
+	font-size: 46.48px; 
+	font-weight: normal; 
+	font-family: 'stymie_md_btmedium'; 
+	color: #336633;  
+	margin-bottom: ;
+}
+#amenities_list_items{	
+	width: 100%; 
+	background: ;
+	height: auto;
+	padding-left: 2%;
+	padding-bottom: 255px;
+}
+.amenities_box1{	
+	float: left;
+	width: 30%;
+	margin-right: 2%;
+	background-color:;
+}
+.amenities_box2{	
+	float: left;
+	width: 25%;
+	margin-right: 2%;
+	background-color:;
+}
+.amenities_box3{	
+	float: left;
+	width: 35%;
+	margin-left: 1%;
+	background-color: ;
+}
+.list{ list-style-type: square;}
+
+.color_list{ color: #336633;}
+
+#amenities_list_items ul{ text-align: left; }
+
+#amenities_list_items ul li{	
+	 
+	background-color: ; 
+	color: #fff; 
+	padding-left: 2%; 
+	font-family: 'sapientsansmediumregular';
+	font-size: 24px; 
+	line-height: 24px; 
+}
+#amenities_list_items ul li:not(.last_amenity_item){ margin-bottom: 33px; /* 4.9%; */}
+
+/**********************************************************************/
+
+/************************* Gallery Styling *************************/
+
+#gallery{ 
+	width: 100%; 
+	height: auto; 
+	/*background-color: #fff; */
+	background-image:url('images/gallery_bg.svg'); 
+	background-repeat:no-repeat; 
+	background-size: cover;
+}
+#gallery h2{ 
+	text-align: left; 
+	font-size: 46.48px; 
+	font-weight: normal; 
+	font-family: 'stymie_md_btmedium'; 
+  color: #336633; 
+	line-height: 46px; 
+	margin-top: 145px;
+}
+#img_container{ 
+	width: 100%; 
+	height: auto; 
+	margin: 80px 0px;	
+	padding: 0%; 
+	background-color:;
+}
+#img_container img{
+	float:left;
+	margin: 0% 0%;
+	width: 49.5%;
+	opacity: 1;
+	/*transition: all 0.6s ease;
+	border: 1px solid transparent;*/
+}
+/*
+.non_transparent{ opacity: 1;}
+
+#img_container  img:first-child{ opacity: 1;}
+
+#img_container img:hover{ opacity: 1; transition: all 0.6s ease;}
+*/
+/**********************************************************************/
+
+/************************* Contact Styling *************************/
+
+#contact{ 
+	width: 100%; 
+	height: auto; 
+	background-color: /*#336633*/; 
+	background-image: url('images/contact_bg.svg'); 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	padding: 59px 0px;
+}
+#contact h2{ 
+	text-align: left; 
+	font-size: 48px; 
+	font-weight: normal; 
+	font-family: 'stymie_md_btmedium'; 
+  color: #99cc33; 
+	line-height: 48px; 
+	margin-bottom: 35px;
+}
+#contact p{ 
+	font-size: 18px; 
+	line-height: 20px; 
+	width: 95%; 
+	text-align: left; 
+	font-family: 'sapientsansregularregular';
+  margin: 0%; 
+	color: #fff;
+}
+
+#contact img{ width: ; margin: 0%; height: auto; text-align: right; }
+
+#contact p:nth-of-type(2n+0){ 
+	font-family: 'sapientsansregularregular';
+  font-size: 24px; 
+	margin-top: 60px;
+}
+
+#contact p:nth-of-type(2n+0)::first-line{ font-size: 18px;}
+
+#contact p:last-of-type{ 
+	font-family: 'sapientsansregularregular';
+  font-size: 24px; 
+	margin-top: 35px;
+}
+
+#contact p:last-of-type::first-line{ font-size: 18px;}
+
+#contact a{ text-decoration: none; color: #fff; }
+
+#contact a:hover{text-decoration: underline; }
+
+/**********************************************************************/
+
+/************************* Footer Styling *************************/
+
+#bottom{	
+	width: 100%; 
+	height: auto; background-color: ;
+	position: relative;
+	background-image: url('images/footer_bg.svg'); 
+	background-repeat: no-repeat; 
+	background-size: cover;
+}
+#footer_menu{ 
+	width: 100%; 
+	height: auto; 
+	background-color:; 
+	padding: 0% 0%; 
+	margin: 41px 0px;
+}
+#bottom img{ 
+	position: absolute; 
+	left: 130px; 
+	bottom: 195px; 
+	border: ; 
+}
+
+#footer_menu ul{ list-style-type: none; overflow: hidden;}
+
+#footer_menu ul li{ float: left; width: 20%;}
+
+#footer_menu ul li a{ 
+	text-decoration: none; 
+	font-size: 18px; 
+	display:block;
+	font-family: 'sapientsansmediumregular'; 
+  color: #336633; 
+	margin: 0% 0%; 
+	padding: 3% 0%; 
+	background: ; 
+	text-align: center;
+}
+
+#footer_menu ul li a:hover{ color: #ff9933; transition: color 0.3s ease;}
+
+#copy_text{ width: 100%; background-color: ; padding: 40px 0px 60px 0px;}
+
+#copy_text p{ 
+	font-family: 'sapientsansregularregular'; 
+	font-size: 14px; 
+	text-align: left; 
+}
+
+/**********************************************************************/
+/*for lightbox*/
+	.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+
+}
+
+/*********************************************************************************************************/
+
+/*********************************************************************************************************/
+									/********** For max-width: 1024px; **********/
+/*********************************************************************************************************/
+
+
+@media screen and (min-width:769px) and (max-width:1024px)
+{
+@font-face {
+    font-family: 'stymie_md_btmedium';
+    src: url('font/stymiem_0-webfont.woff2') format('woff2'),
+         url('font/stymiem_0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sapientsansregularregular';
+    src: url('font/sapisrg_0-webfont.woff2') format('woff2'),
+         url('font/sapisrg_0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sapientsansmediumregular';
+    src: url('font/sapism_1-webfont.woff2') format('woff2'),
+         url('font/sapism_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+*{ margin: 0px; padding: 0px; }
+
+body{ text-align: center; }
+
+#wrapper{
+	width: 100%;
+	height: auto;
+	background-color: #FFF;
+	margin: 0px auto;
+}
+.icon_size{ font-size: 16.5px;}
+
+/************************* Top Section Styles ***************************************************/
+
+#top{ width: 100%; /*height: 300px;*/
+	/******* Updated on 23_Sep_16 by Amey ***/
+	height: auto;
+	padding-bottom: 29%;
+	/****************************************/
+ 	background-image: url('images/mob_banner.jpg'); 
+      background-repeat: no-repeat; background-size:100%; background-position:center 120%;}
+
+.main_outer{ width: 100%; height: auto; background-color: /*#234*/; margin: 0px auto; }
+
+.main_content{ width: 100%; height: auto; background-color: /*#456*/; margin: 0px auto;  }
+
+.left_side{
+	width: 100%;
+	height: auto;
+	background-color:;
+	float: none;
+}
+
+.right_side{ width: 100%; height: auto; background-color: /*#786*/; float: none; }
+
+#logo{ width: 30%; height: auto; background-color: ; margin: 0px auto; border-radius:;  text-align:left;}
+/*
+#logo_text{	width:100% ; height: auto; background-color: rgba(255,255,255,0.5); 
+						color: #000; font-family: 'stymie_md_btmedium'; 
+						font-size: 12px;  padding: 0.5% 0%; margin-top: 17px; text-align: left; 
+} 
+*/
+#logo img{  width:100%;}
+#menu{ width: 100%; height: auto; margin-top: 98px;  display:none;}
+
+#menu_btn{ display: block; z-index: 999;} /* Only for mobile device */
+
+#mobile{ z-index: 1000; }
+
+#menu ul{ list-style-type: none; overflow: hidden; }
+
+#menu ul li{ float: left; width: 20%; }
+
+#menu ul li a{ text-decoration: none; display: block; text-transform: uppercase; 
+	          background-color: #336633; color: #fff; transition: all 0.4s ease; 
+            font-size: 17.99px; font-family: 'sapientsansmediumregular';
+					  padding: 20px 0px;  text-align: center;
+}
+
+.active{ background: rgba(255,255,255,0.5); color: #336633; display:inline-block;   padding: 20px 0px;  }
+/*
+#menu_mobile{
+	display: block;
+	width: 100%;
+	height: 50px;
+}*/
+#menu ul li a:hover{ color: #336633; background-color: rgba(255,255,255,0.5); transition: all 0.4s ease;}
+
+#banner_text{
+	width: 100%;
+	margin-top: ;
+	text-align: left;
+	padding-top: 4%;
+}
+.tagline{	display:block;font-size: 30px; font-weight: normal; color: #336633; padding: 3% 0%; 
+					font-family: 'stymie_md_btmedium'; line-height: 30px; }
+
+					
+/*
+#banner_text h1{ font-size: 30px; font-weight: normal; color: #336633; padding: 5% 0%; 
+								font-family: 'stymie_md_btmedium'; line-height: 45px;}
+*/
+/*********************************** About Section Styles *************************************************/
+
+#about_anjarle{ width: 100%; height: auto; background-color: #99cc33; padding: 60px 0px; text-align: center;}
+
+#about_anjarle h1{ text-align: center; font-size: 42px; font-weight: normal; /*font-family: Stymie Md BT; */ font-family: 'stymie_md_btmedium'; 
+                               color: #336633; margin:0px ; padding-top: 0%; line-height: 50px;}
+
+#about_anjarle p{ width: 87%; font-size: 17.99px; line-height: 20px; text-align: left; 
+                               /*font-family: SapientSansRegular; */ font-family: 'sapientsansregularregular';
+							   margin: 5% auto;}
+
+/************ Updated on 23_Sep_16 by Amey ****/
+
+#about_anjarle h6{
+	font-weight: normal;
+	font-size: 17px;
+	font-family: 'sapientsansregularregular'; 
+	padding: 5px 0px 0px 0px;
+	background-color: ;
+	/*margin: 0% auto;*/
+	text-align: center;
+	
+}
+#about_anjarle h6 a{
+	color: #fff;
+	background-color: #333;
+	display: block;
+	width: 200px;
+		margin: 0% auto;
+	text-align: center;
+	padding: 10px 5px;
+	transition: all 0.6s ease;
+	border-radius: 2px;
+}
+.icon_space{
+	padding-left: 2%;
+}
+#about_anjarle h6 a:hover{
+	background-color: #336633;
+	color: #fff;
+}
+
+/**********************************************/
+
+
+.color_text{ color: #fff;/*#99cc33;*/}
+
+#about_anjarle img{ margin: 30px auto 0px auto; float: none; width:80%; }
+
+/****************** About Kwalicon Styles **************************************/
+
+#about_kwalicon{
+	width: 100%;
+	height: auto;
+	background-color: #336633; 
+	background-image: none;
+	padding-bottom:50px;
+}
+
+.hidden_text{ display: none;}
+#btn{ 
+	display: block;
+	font-family: 'sapientsansregularregular'; 
+	font-size: 17.99px;
+	color: #99cc33;
+	margin: 1% auto;
+	width: 100px;
+	text-align: center;
+}
+#btn:hover{ cursor: pointer;}
+
+#left_box1{ width: 100%; height: auto; background-color: /*#99cc33*/; float: none;}
+
+#left_box2{ width: 100%; height: auto; background-color: /*#336633*/; float: none;}
+
+#left_box1 img{ float: none; margin: 60px 0px 60px 0px;
+								width: 35%; /** changes made on 01_Oct_16 **/}
+
+#left_box2 h1{ text-align: center; font-size: 42px; font-weight: normal; font-family: 'stymie_md_btmedium';  
+              color: #fff; margin: 0px 0px 30px 0px;}
+
+#right_box1{ width: 100%; height: auto; background-color: ; float: none; margin-top: 0%; color: #fff;}
+
+#right_box2{ width: 100%; height: auto; background-color: ; float: none; margin-top: 3%; color: #fff;}
+
+.about_kwalicon_text{ width: 90%; text-align: left; font-family: 'sapientsansregularregular';
+                      font-size: 17.99px; line-height: 20px; margin:10px auto; }
+
+.diff_para{ font-family: 'stymie_md_btmedium'; color: #99cc33;}
+
+
+/********************** Amenities Section Styles ***********************************************/
+
+#amenities{ 
+	width: 100%; 
+	height: auto; 
+	background-color: #99cc33;
+	background-image:none;
+	background-repeat:no-repeat;
+	background-size: cover;	
+}
+#amenities_text{ 
+	text-align: center; 
+	background-color: ; 
+	padding: 60px 0px 30px 0px; 
+}
+#amenities_text h2{	
+	font-size: 42px; 
+	font-weight: normal; 
+	font-family: 'stymie_md_btmedium'; 
+	color: #336633;  
+}
+#amenities_list_items{	
+	width: 100%; 
+	background: ;
+	height: auto;
+	padding-left: 0%;
+	padding-bottom: 60px;
+}
+.amenities_box1{	
+	float:none;
+	width: 80%;
+	/*margin-left: 5%; */
+	margin: 0px auto;
+	background-color: ;
+}
+.amenities_box2{	
+	float:none;
+	width: 80%;
+	/*margin-left: 5%;*/
+	margin: 0px auto;
+	background-color: ;
+}
+.amenities_box3{	
+	float:none;
+	width: 80%;
+	/*margin-left: 5%;*/
+	margin: 0px auto;
+	background-color: ;
+}
+.list{ list-style-type: square;}
+
+.color_list{ color: #336633;}
+
+#amenities_list_items ul{ text-align: left; margin-left:0%;}
+
+#amenities_list_items ul li{	
+	float: none;   
+	background-color: ; 
+	color: #fff; 
+	padding-left: 0px; 
+	font-family: 'sapientsansmediumregular';
+	font-size: 20px; 
+	line-height:30px;
+	width:90%
+}
+#amenities_list_items ul li{ margin-bottom: 33px; /* 4.9%; */}
+/*********************** Gallery Styling *********************************************************/
+
+#gallery{ width: 100%; height: auto; background-color: #336633; 
+          background-image:none; padding: 60px 0px 60px 0px;}
+
+#gallery h2{ text-align: center; font-size: 42px; font-weight: normal; font-family: 'stymie_md_btmedium'; 
+            color: #99cc33; line-height: 46px; margin-top:0px;}
+
+#img_container{ width: ; height: auto; margin: 30px 0px 0px 0px; background-color:;}
+
+#gallery img{
+	float:none;
+	margin: 0% 0% 1% 0%; /** Changes made on 01_Oct_16 **/
+	opacity: 1;
+	transition: opacity 0.8s ease;
+	width: 55%; /** Changes made on 01_Oct_16 **/
+	border: 5px solid #e1e1e1; /** Changes made on 01_Oct_16 **/
+	border-radius: 2px; /** Changes made on 01_Oct_16 **/
+}
+#gallery img:hover{ /*opacity: 1; transition: opacity 0.8s ease; */}
+
+/************************** Contact Styling *******************************************************/
+
+#contact{ width: 100%; height: auto; margin-top:0px; padding: 60px 0px; 
+					background-color:#99cc33; background-image:none;}
+
+#contact h2{	text-align:center; font-size: 42px; font-weight: normal; font-family: 'stymie_md_btmedium'; 
+						color: #336633; line-height: 48px; margin-bottom: 35px;}
+
+#contact p{	font-size: 18px; line-height: 25px; width: 95%; margin:0px auto; text-align: center; 
+						font-family: 'sapientsansregularregular'; color: #fff;}
+
+#contact img{ width: 80%; /** modified on 01_Oct_16 **/
+			  margin-top: 30px; height: auto; text-align: center; }
+
+#contact p:first-of-type::first-line{ color: #336633;}
+#contact p:nth-of-type(2n+0){ font-family: 'sapientsansregularregular'; font-size: 24px; margin-top: 35px;}
+
+#contact p:nth-of-type(2n+0)::first-line{ font-size: 18px; color: #336633;}
+
+#contact p:last-of-type{ font-family: 'sapientsansregularregular'; font-size: 24px; margin-top: 35px; }
+
+#contact p:last-of-type::first-line{ font-size: 18px; color: #336633;}
+
+/************************** Footer Styling *******************************************************/
+
+#bottom{ width: 100%; height: auto; background-color:; position: relative;
+         background-image: none;}
+
+#footer_menu{ width: 100%; height: auto; background-color:; padding: 0% 0%; margin:0px 0px;  display:none;}
+
+#bottom img{ position: absolute; left: 0px; bottom:0; border: ; display:none;}
+
+#footer_menu ul{ list-style-type: none; overflow: hidden;}
+
+#footer_menu ul li{ float: none; width: 100%; display:block;}
+
+#footer_menu ul li a{ text-decoration: none; font-size: 18px; /*font-family: Stymie Md BT; */ font-family: 'sapientsansmediumregular'; 
+                   color: #336633; margin: 0% 0%; padding: 1% 0%; background: ; text-align: center;}
+
+#footer_menu ul li a:hover{ color: #ff9933; transition: color 0.3s ease;}
+
+#copy_text{ width: 100%; background-color: ; padding:20px 0px 2 0px 0px;}
+
+#copy_text p{ font-family: 'sapientsansregularregular'; font-size: 14px; text-align: left; width:95%; margin:0px auto; }
+/*for lightbox*/
+	.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+	
+}
+
+
+
+/*********************************************************************************************************/
+									/********** For max-width: 768px; **********/
+/*********************************************************************************************************/
+
+
+@media screen and (max-width: 768px)
+{
+@font-face {
+    font-family: 'stymie_md_btmedium';
+    src: url('font/stymiem_0-webfont.woff2') format('woff2'),
+         url('font/stymiem_0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sapientsansregularregular';
+    src: url('font/sapisrg_0-webfont.woff2') format('woff2'),
+         url('font/sapisrg_0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sapientsansmediumregular';
+    src: url('font/sapism_1-webfont.woff2') format('woff2'),
+         url('font/sapism_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+*{ margin: 0px; padding: 0px; }
+
+body{ text-align: center; }
+
+#wrapper{
+	width: 100%;
+	height: auto;
+	background-color: #FFF;
+	margin: 0px auto;
+}
+.icon_size{ font-size: 16.5px;}
+
+/************************* Top Section Styles ***************************************************/
+
+#top{ width: 100%; /*height: 300px;*/
+	/******* Updated on 23_Sep_16 by Amey ***/
+	height: auto;
+	padding-bottom: 29%;
+	/****************************************/
+ background-image: url('images/mob_banner.jpg'); 
+      background-repeat: no-repeat; background-size:100%; background-position:center 120%;}
+
+.main_outer{ width: 100%; height: auto; background-color: /*#234*/; margin: 0px auto; }
+
+.main_content{ width: 100%; height: auto; background-color: /*#456*/; margin: 0px auto;  }
+
+.left_side{
+	width: 100%;
+	height: auto;
+	background-color:;
+	float: none;
+}
+
+.right_side{ width: 100%; height: auto; background-color: /*#786*/; float: none; }
+
+#logo{ width: 30%; height: auto; background-color: ; margin: 0px auto; border-radius:;  text-align:left;}
+/*
+#logo_text{	width:100% ; height: auto; background-color: rgba(255,255,255,0.5); 
+						color: #000; font-family: 'stymie_md_btmedium'; 
+						font-size: 12px;  padding: 0.5% 0%; margin-top: 17px; text-align: left; 
+} 
+*/
+#logo img{  width:100%;}
+#menu{ width: 100%; height: auto; margin-top: 98px;  display:none;}
+
+#menu_btn{ display: block; z-index: 999;} /* Only for mobile device */
+
+#mobile{ z-index: 1000; }
+
+#menu ul{ list-style-type: none; overflow: hidden; }
+
+#menu ul li{ float: left; width: 20%; }
+
+#menu ul li a{ text-decoration: none; display: block; text-transform: uppercase; 
+	          background-color: #336633; color: #fff; transition: all 0.4s ease; 
+            font-size: 17.99px; font-family: 'sapientsansmediumregular';
+					  padding: 20px 0px;  text-align: center;
+}
+
+.active{ background: rgba(255,255,255,0.5); color: #336633; display:inline-block;   padding: 20px 0px;  }
+/*
+#menu_mobile{
+	display: block;
+	width: 100%;
+	height: 50px;
+}*/
+#menu ul li a:hover{ color: #336633; background-color: rgba(255,255,255,0.5); transition: all 0.4s ease;}
+
+#banner_text{
+	width: 100%;
+	margin-top: ;
+	text-align: left;
+	padding-top: 4%;
+}
+.tagline{	display:block;font-size: 30px; font-weight: normal; color: #336633; padding: 3% 0%; 
+					font-family: 'stymie_md_btmedium'; line-height: 30px; }
+
+					
+/*
+#banner_text h1{ font-size: 30px; font-weight: normal; color: #336633; padding: 5% 0%; 
+								font-family: 'stymie_md_btmedium'; line-height: 45px;}
+*/
+/*********************************** About Section Styles *************************************************/
+
+#about_anjarle{ width: 100%; height: auto; background-color: #99cc33; padding: 60px 0px; text-align: center;}
+
+#about_anjarle h1{ text-align: center; font-size: 42px; font-weight: normal; /*font-family: Stymie Md BT; */ font-family: 'stymie_md_btmedium'; 
+                               color: #336633; margin:0px ; padding-top: 0%; line-height: 50px;}
+
+#about_anjarle p{ width: 87%; font-size: 17.99px; line-height: 20px; text-align: left; 
+                               /*font-family: SapientSansRegular; */ font-family: 'sapientsansregularregular';
+							   margin: 5% auto;}
+
+/************ Updated on 23_Sep_16 by Amey ****/
+
+#about_anjarle h6{
+	font-weight: normal;
+	font-size: 17px;
+	font-family: 'sapientsansregularregular'; 
+	padding: 5px 0px 0px 0px;
+	background-color: ;
+	/*margin: 0% auto;*/
+	text-align: center;
+	
+}
+#about_anjarle h6 a{
+	color: #fff;
+	background-color: #333;
+	display: block;
+	width: 200px;
+		margin: 0% auto;
+	text-align: center;
+	padding: 10px 5px;
+	transition: all 0.6s ease;
+	border-radius: 2px;
+}
+.icon_space{
+	padding-left: 2%;
+}
+#about_anjarle h6 a:hover{
+	background-color: #336633;
+	color: #fff;
+}
+
+/**********************************************/
+
+
+.color_text{ color: #fff;/*#99cc33;*/}
+
+#about_anjarle img{ margin: 30px auto 0px auto; float: none; width:80%; }
+
+/****************** About Kwalicon Styles **************************************/
+
+#about_kwalicon{
+	width: 100%;
+	height: auto;
+	background-color: #336633; 
+	background-image: none;
+	padding-bottom:50px;
+}
+
+.hidden_text{ display: none;}
+#btn{ 
+	display: block;
+	font-family: 'sapientsansregularregular'; 
+	font-size: 17.99px;
+	color: #99cc33;
+	margin: 1% auto;
+	width: 100px;
+	text-align: center;
+}
+#btn:hover{ cursor: pointer;}
+
+#left_box1{ width: 100%; height: auto; background-color: /*#99cc33*/; float: none;}
+
+#left_box2{ width: 100%; height: auto; background-color: /*#336633*/; float: none;}
+
+#left_box1 img{ float: none; margin: 60px 0px 60px 0px; 
+								width: 42%; /** changes made on 01_Oct_16 **/}
+
+#left_box2 h1{ text-align: center; font-size: 42px; font-weight: normal; font-family: 'stymie_md_btmedium';  
+              color: #fff; margin: 0px 0px 30px 0px;}
+
+#right_box1{ width: 100%; height: auto; background-color: ; float: none; margin-top: 0%; color: #fff;}
+
+#right_box2{ width: 100%; height: auto; background-color: ; float: none; margin-top: 3%; color: #fff;}
+
+.about_kwalicon_text{ width: 90%; text-align: left; font-family: 'sapientsansregularregular';
+                      font-size: 17.99px; line-height: 20px; margin:10px auto; }
+
+.diff_para{ font-family: 'stymie_md_btmedium'; color: #99cc33;}
+
+
+/********************** Amenities Section Styles ***********************************************/
+
+#amenities{ 
+	width: 100%; 
+	height: auto; 
+	background-color: #99cc33;
+	background-image:none;
+	background-repeat:no-repeat;
+	background-size: cover;	
+}
+#amenities_text{ 
+	text-align: center; 
+	background-color: ; 
+	padding: 60px 0px 30px 0px; 
+}
+#amenities_text h2{	
+	font-size: 42px; 
+	font-weight: normal; 
+	font-family: 'stymie_md_btmedium'; 
+	color: #336633;  
+}
+#amenities_list_items{	
+	width: 100%; 
+	background: ;
+	height: auto;
+	padding-left: 0%;
+	padding-bottom: 60px;
+}
+.amenities_box1{	
+	float:none;
+	width: 80%;
+	/*margin-left: 5%; */
+	margin: 0px auto;
+	background-color: ;
+}
+.amenities_box2{	
+	float:none;
+	width: 80%;
+	/*margin-left: 5%;*/
+	margin: 0px auto;
+	background-color: ;
+}
+.amenities_box3{	
+	float:none;
+	width: 80%;
+	/*margin-left: 5%;*/
+	margin: 0px auto;
+	background-color: ;
+}
+.list{ list-style-type: square;}
+
+.color_list{ color: #336633;}
+
+#amenities_list_items ul{ text-align: left; margin-left:0%;}
+
+#amenities_list_items ul li{	
+	float: none;   
+	background-color: ; 
+	color: #fff; 
+	padding-left: 0px; 
+	font-family: 'sapientsansmediumregular';
+	font-size: 20px; 
+	line-height:30px;
+	background-color: ;
+	width:90%;
+}
+#amenities_list_items ul li{ margin-bottom: 33px; /* 4.9%; */}
+
+
+/*********************** Gallery Styling *********************************************************/
+
+#gallery{ width: 100%; height: auto; background-color: #336633; 
+          background-image:none; padding: 60px 0px 60px 0px;}
+
+#gallery h2{ text-align: center; font-size: 42px; font-weight: normal; font-family: 'stymie_md_btmedium'; 
+            color: #99cc33; line-height: 46px; margin-top:0px;}
+
+#img_container{ width: ; height: auto; margin: 30px 0px 0px 0px; background-color:;}
+
+#gallery img{
+	float:none;
+	margin: 0% 0% 1% 0%;
+	opacity: 1;
+	transition: opacity 0.8s ease;
+	width: 60%; /** Changes made on 01_Oct_16 **/
+	border: 5px solid #e1e1e1; /** Changes made on 01_Oct_16 **/
+	border-radius: 2px; /** Changes made on 01_Oct_16 **/
+}
+#gallery img:hover{ /*opacity: 1; transition: opacity 0.8s ease; */}
+
+/************************** Contact Styling *******************************************************/
+
+#contact{ width: 100%; height: auto; margin-top:0px; padding: 60px 0px; 
+					background-color:#99cc33; background-image:none;}
+
+#contact h2{	text-align:center; font-size: 42px; font-weight: normal; font-family: 'stymie_md_btmedium'; 
+						color: #336633; line-height: 48px; margin-bottom: 35px;}
+
+#contact p{	font-size: 18px; line-height: 25px; width: 95%; margin:0px auto; text-align: center; 
+						font-family: 'sapientsansregularregular'; color: #fff;}
+
+#contact img{ width: 80%; /** modified on 01_Oct_16 **/
+			  margin-top: 30px; height: auto; text-align: center; }
+
+#contact p:first-of-type::first-line{ color: #336633;}
+#contact p:nth-of-type(2n+0){ font-family: 'sapientsansregularregular'; font-size: 24px; margin-top: 35px;}
+
+#contact p:nth-of-type(2n+0)::first-line{ font-size: 18px; color: #336633;}
+
+#contact p:last-of-type{ font-family: 'sapientsansregularregular'; font-size: 24px; margin-top: 35px; }
+
+#contact p:last-of-type::first-line{ font-size: 18px; color: #336633;}
+
+/************************** Footer Styling *******************************************************/
+
+#bottom{ width: 100%; height: auto; background-color:; position: relative;
+         background-image: none;}
+
+#footer_menu{ width: 100%; height: auto; background-color:; padding: 0% 0%; margin:0px 0px;  display:none;}
+
+#bottom img{ position: absolute; left: 0px; bottom:0; border: ; display:none;}
+
+#footer_menu ul{ list-style-type: none; overflow: hidden;}
+
+#footer_menu ul li{ float: none; width: 100%; display:block;}
+
+#footer_menu ul li a{ text-decoration: none; font-size: 18px; /*font-family: Stymie Md BT; */ font-family: 'sapientsansmediumregular'; 
+                   color: #336633; margin: 0% 0%; padding: 1% 0%; background: ; text-align: center;}
+
+#footer_menu ul li a:hover{ color: #ff9933; transition: color 0.3s ease;}
+
+#copy_text{ width: 100%; background-color: ; padding:20px 0px 2 0px 0px;}
+
+#copy_text p{ font-family: 'sapientsansregularregular'; font-size: 14px; text-align: left; width:95%; margin:0px auto; }
+/*for lightbox*/
+	.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+	
+}
+
+
+/*********************************************************************************************************/
+									/********** For min-width: 321px & max-width: 480px; **********/
+/*********************************************************************************************************/
+
+@media screen and (min-width:321px) and (max-width:480px) 
+{
+@font-face {
+    font-family: 'stymie_md_btmedium';
+    src: url('font/stymiem_0-webfont.woff2') format('woff2'),
+         url('font/stymiem_0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sapientsansregularregular';
+    src: url('font/sapisrg_0-webfont.woff2') format('woff2'),
+         url('font/sapisrg_0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sapientsansmediumregular';
+    src: url('font/sapism_1-webfont.woff2') format('woff2'),
+         url('font/sapism_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+*{ margin: 0px; padding: 0px; }
+
+body{ text-align: center; }
+
+#wrapper{
+	width: 100%;
+	height: auto;
+	background-color: #FFF;
+	margin: 0px auto;
+}
+.icon_size{ font-size: 16.5px;}
+
+/************************* Top Section Styles ***************************************************/
+
+#top{ width: 100%; /*height: 300px;*/ 
+		/******* Updated on 23_Sep_16 by Amey ***/
+	height: auto;
+	padding-bottom: 29%;
+	/****************************************/
+background-image: url('images/mob_banner.jpg'); 
+      background-repeat: no-repeat; background-size:100%; background-position:center 120%;}
+
+.main_outer{ width: 100%; height: auto; background-color: /*#234*/; margin: 0px auto; }
+
+.main_content{ width: 100%; height: auto; background-color: /*#456*/; margin: 0px auto;  }
+
+.left_side{
+	width: 100%;
+	height: auto;
+	background-color:;
+	float: none;
+}
+
+.right_side{ width: 100%; height: auto; background-color: /*#786*/; float: none; }
+
+#logo{ width: 40%; height: auto; background-color: ; margin: 0px auto; border-radius:;  text-align:left;}
+/*
+#logo_text{	width:100% ; height: auto; background-color: rgba(255,255,255,0.5); 
+						color: #000; font-family: 'stymie_md_btmedium'; 
+						font-size: 12px;  padding: 0.5% 0%; margin-top: 17px; text-align: left; 
+} 
+*/
+#logo img{  width:100%;}
+#menu{ width: 100%; height: auto; margin-top: 98px;  display:none;}
+
+#menu_btn{ display: block;} /* Only for mobile device */
+
+#menu ul{ list-style-type: none; overflow: hidden; }
+
+#menu ul li{ float: left; width: 20%; }
+
+#menu ul li a{ text-decoration: none; display: block; text-transform: uppercase; 
+	          background-color: #336633; color: #fff; transition: all 0.4s ease; 
+            font-size: 17.99px; font-family: 'sapientsansmediumregular';
+					  padding: 20px 0px;  text-align: center;
+}
+
+.active{ background: rgba(255,255,255,0.5); color: #336633; display:inline-block;   padding: 20px 0px;  }
+
+#menu_mobile{
+	display: block;
+	width: 100%;
+	height: 50px;
+}
+#menu ul li a:hover{ color: #336633; background-color: rgba(255,255,255,0.5); transition: all 0.4s ease;}
+
+#banner_text{
+	width: 100%;
+	margin-top: ;
+	text-align: left;
+	padding-top: 4%;
+}
+.tagline{	display:block;font-size: 30px; font-weight: normal; color: #336633; padding: 3% 0%; 
+					font-family: 'stymie_md_btmedium'; line-height: 30px; }
+/*
+#banner_text h1{ font-size: 30px; font-weight: normal; color: #336633; padding: 5% 0%; 
+								font-family: 'stymie_md_btmedium'; line-height: 45px;}
+*/
+/*********************************** About Section Styles *************************************************/
+
+#about_anjarle{ width: 100%; height: auto; background-color: #99cc33; padding: 60px 0px; text-align: center;}
+
+#about_anjarle h1{ text-align: center; font-size: 42px; font-weight: normal; /*font-family: Stymie Md BT; */ font-family: 'stymie_md_btmedium'; 
+                               color: #336633; margin:0px ; padding-top: 0%; line-height: 50px;}
+
+#about_anjarle p{ width: 87%; font-size: 17.99px; line-height: 20px; text-align: left; 
+                               /*font-family: SapientSansRegular; */ font-family: 'sapientsansregularregular';
+							   margin: 5% auto;}
+
+/************ Updated on 23_Sep_16 by Amey ****/
+
+#about_anjarle h6{
+	font-weight: normal;
+	font-size: 17px;
+	font-family: 'sapientsansregularregular'; 
+	padding: 5px 0px 0px 0px;
+	background-color: ;
+	/*margin: 0% auto;*/
+	text-align: center;
+}
+#about_anjarle h6 a{
+	color: #fff;
+	background-color: #333;
+	display: block;
+	width: 200px;
+	text-align: center;
+	padding: 10px 5px;
+	transition: all 0.6s ease;
+	border-radius: 2px;
+}
+.icon_space{
+	padding-left: 2%;
+}
+#about_anjarle h6 a:hover{
+	background-color: #336633;
+	color: #fff;
+}
+
+/**********************************************/
+
+.color_text{ color: #fff;/*#99cc33;*/}
+
+#about_anjarle img{ margin: 30px auto 0px auto; float: none; width:80%; }
+
+/****************** About Kwalicon Styles **************************************/
+
+#about_kwalicon{
+	width: 100%;
+	height: auto;
+	background-color: #336633; 
+	background-image: none;
+	padding-bottom:50px;
+}
+
+.hidden_text{ display: none;}
+#btn{ 
+	display: block;
+	font-family: 'sapientsansregularregular'; 
+	font-size: 17.99px;
+	color: #99cc33;
+	margin: 1% auto;
+	width: 100px;
+	text-align: center;
+}
+#btn:hover{ cursor: pointer;}
+
+#left_box1{ width: 100%; height: auto; background-color: /*#99cc33*/; float: none;}
+
+#left_box2{ width: 100%; height: auto; background-color: /*#336633*/; float: none;}
+
+#left_box1 img{ float: none; margin: 60px 0px 60px 0px;}
+
+#left_box2 h1{ text-align: center; font-size: 42px; font-weight: normal; font-family: 'stymie_md_btmedium';  
+              color: #fff; margin: 0px 0px 30px 0px;}
+
+#right_box1{ width: 100%; height: auto; background-color: ; float: none; margin-top: 0%; color: #fff;}
+
+#right_box2{ width: 100%; height: auto; background-color: ; float: none; margin-top: 3%; color: #fff;}
+
+.about_kwalicon_text{ width: 90%; text-align: left; font-family: 'sapientsansregularregular';
+                      font-size: 17.99px; line-height: 20px; margin:10px auto; }
+
+.diff_para{ font-family: 'stymie_md_btmedium'; color: #99cc33;}
+
+/********************** Amenities Section Styles ***********************************************/
+
+
+#amenities{ 
+	width: 100%; 
+	height: auto; 
+	background-color: #99cc33;
+	background-image:none;
+	background-repeat:no-repeat;
+	background-size: cover;	
+}
+#amenities_text{ 
+	text-align: center; 
+	background-color: ; 
+	padding: 60px 0px 30px 0px; 
+}
+#amenities_text h2{	
+	font-size: 42px; 
+	font-weight: normal; 
+	font-family: 'stymie_md_btmedium'; 
+	color: #336633;  
+}
+#amenities_list_items{	
+	width: 100%; 
+	background: ;
+	height: auto;
+	padding-left: 0%;
+	padding-bottom: 60px;
+}
+.amenities_box1{	
+	float:none;
+	width: 80%;
+	/*margin-left: 5%; */
+	margin: 0px auto;
+	background-color: ;
+}
+.amenities_box2{	
+	float:none;
+	width: 80%;
+	/*margin-left: 5%;*/
+	margin: 0px auto;
+	background-color: ;
+}
+.amenities_box3{	
+	float:none;
+	width: 80%;
+	/*margin-left: 5%;*/
+	margin: 0px auto;
+	background-color: ;
+}
+.list{ list-style-type: square;}
+
+.color_list{ color: #336633;}
+
+#amenities_list_items ul{ text-align: left; margin-left:0%;}
+
+#amenities_list_items ul li{	
+	float: none;   
+	background-color: ; 
+	color: #fff; 
+	padding-left: 0px; 
+	font-family: 'sapientsansmediumregular';
+	font-size: 20px; 
+	line-height:30px;
+	width: 90%; 
+}
+#amenities_list_items ul li{ margin-bottom: 33px; /* 4.9%; */}
+/*********************** Gallery Styling *********************************************************/
+
+#gallery{ width: 100%; height: auto; background-color: #336633; 
+          background-image:none; padding: 60px 0px 60px 0px;}
+
+#gallery h2{ text-align: center; font-size: 42px; font-weight: normal; font-family: 'stymie_md_btmedium'; 
+            color: #99cc33; line-height: 46px; margin-top:0px;}
+
+#img_container{ width: ; height: auto; margin: 30px 0px 0px 0px; background-color:;}
+
+#gallery img{
+	float:none;
+	margin: 0% 0% 1% 0%; /** Changes made on 01_Oct_16 **/
+	opacity: 1;
+	transition: opacity 0.8s ease;
+	width: 70%; /** Changes made on 01_Oct_16 **/
+	border: 5px solid #e1e1e1; /** Changes made on 01_Oct_16 **/
+	border-radius: 2px; /** Changes made on 01_Oct_16 **/
+}
+#gallery img:hover{ /*opacity: 1; transition: opacity 0.8s ease; */}
+
+/************************** Contact Styling *******************************************************/
+
+#contact{ width: 100%; height: auto; margin-top:0px; padding: 60px 0px; 
+					background-color:#99cc33; background-image:none;}
+
+#contact h2{	text-align:center; font-size: 42px; font-weight: normal; font-family: 'stymie_md_btmedium'; 
+						color: #336633; line-height: 48px; margin-bottom: 35px;}
+
+#contact p{	font-size: 18px; line-height: 25px; width: 95%; margin:0px auto; text-align: center; 
+						font-family: 'sapientsansregularregular'; color: #fff;}
+
+#contact img{ width: 100%; margin-top: 30px; height: auto; text-align: center; }
+
+#contact p:first-of-type::first-line{ color: #336633;}
+#contact p:nth-of-type(2n+0){ font-family: 'sapientsansregularregular'; font-size: 24px; margin-top: 35px;}
+
+#contact p:nth-of-type(2n+0)::first-line{ font-size: 18px; color: #336633;}
+
+#contact p:last-of-type{ font-family: 'sapientsansregularregular'; font-size: 24px; margin-top: 35px; }
+
+#contact p:last-of-type::first-line{ font-size: 18px; color: #336633;}
+
+/************************** Footer Styling *******************************************************/
+
+#bottom{ width: 100%; height: auto; background-color:; position: relative;
+         background-image: none;}
+
+#footer_menu{ width: 100%; height: auto; background-color:; padding: 0% 0%; margin:0px 0px;  display:none;}
+
+#bottom img{ position: absolute; left: 0px; bottom:0; border: ; display:none;}
+
+#footer_menu ul{ list-style-type: none; overflow: hidden;}
+
+#footer_menu ul li{ float: none; width: 100%; display:block;}
+
+#footer_menu ul li a{ text-decoration: none; font-size: 18px; /*font-family: Stymie Md BT; */ font-family: 'sapientsansmediumregular'; 
+                   color: #336633; margin: 0% 0%; padding: 1% 0%; background: ; text-align: center;}
+
+#footer_menu ul li a:hover{ color: #ff9933; transition: color 0.3s ease;}
+
+#copy_text{ width: 100%; background-color: ; padding:20px 0px 2 0px 0px;}
+
+#copy_text p{ font-family: 'sapientsansregularregular'; font-size: 14px; text-align: left; width:95%; margin:0px auto; }
+/*for lightbox*/
+	.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+}
+
+
+/*********************************************************************************************************/
+									/********** For min-width: 240px & max-width: 320px; **********/
+/*********************************************************************************************************/
+
+@media screen and (min-width: 240px) and (max-width:320px)
+{
+@font-face {
+    font-family: 'stymie_md_btmedium';
+    src: url('font/stymiem_0-webfont.woff2') format('woff2'),
+         url('font/stymiem_0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sapientsansregularregular';
+    src: url('font/sapisrg_0-webfont.woff2') format('woff2'),
+         url('font/sapisrg_0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'sapientsansmediumregular';
+    src: url('font/sapism_1-webfont.woff2') format('woff2'),
+         url('font/sapism_1-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+*{ margin: 0px; padding: 0px; }
+
+body{ text-align: center; }
+
+#wrapper{
+	width: 100%;
+	height: auto;
+	background-color: #FFF;
+	margin: 0px auto;
+}
+.icon_size{ font-size: 16.5px;}
+
+/************************* Top Section Styles ***************************************************/
+
+#top{ width: 100%; /*height: 300px;*/ 
+		/******* Updated on 23_Sep_16 by Amey ***/
+	height: auto;
+	padding-bottom: 29%;
+	/****************************************/
+background-image: url('images/mob_banner.jpg'); 
+      background-repeat: no-repeat; background-size:100%; background-position:center 120%;}
+
+.main_outer{ width: 100%; height: auto; background-color: /*#234*/; margin: 0px auto; }
+
+.main_content{ width: 100%; height: auto; background-color: /*#456*/; margin: 0px auto;  }
+
+.left_side{
+	width: 100%;
+	height: auto;
+	background-color:;
+	float: none;
+}
+
+.right_side{ width: 100%; height: auto; background-color: /*#786*/; float: none; }
+
+#logo{ width: 40%; height: auto; background-color: ; margin: 0px auto; border-radius:;  text-align:left;}
+/*
+#logo_text{	width:100% ; height: auto; background-color: rgba(255,255,255,0.5); 
+						color: #000; font-family: 'stymie_md_btmedium'; 
+						font-size: 12px;  padding: 0.5% 0%; margin-top: 17px; text-align: left; 
+} 
+*/
+#logo img{  width:100%;}
+#menu{ width: 100%; height: auto; margin-top: 98px;  display:none;}
+
+#menu_btn{ display: block;} /* Only for mobile device */
+
+#menu ul{ list-style-type: none; overflow: hidden; }
+
+#menu ul li{ float: left; width: 20%; }
+
+#menu ul li a{ text-decoration: none; display: block; text-transform: uppercase; 
+	          background-color: #336633; color: #fff; transition: all 0.4s ease; 
+            font-size: 17.99px; font-family: 'sapientsansmediumregular';
+					  padding: 20px 0px;  text-align: center;
+}
+
+.active{ background: rgba(255,255,255,0.5); color: #336633; display:inline-block;   padding: 20px 0px;  }
+
+#menu_mobile{
+	display: block;
+	width: 100%;
+	height: 50px;
+}
+#menu ul li a:hover{ color: #336633; background-color: rgba(255,255,255,0.5); transition: all 0.4s ease;}
+
+#banner_text{
+	width: 100%;
+	margin-top: ;
+	text-align: left;
+	padding-top: 4%;
+}
+.tagline{	display:block;font-size: 30px; font-weight: normal; color: #336633; padding: 3% 0%; 
+					font-family: 'stymie_md_btmedium'; line-height: 30px; }
+/*
+#banner_text h1{ font-size: 30px; font-weight: normal; color: #336633; padding: 5% 0%; 
+								font-family: 'stymie_md_btmedium'; line-height: 45px;}
+*/
+/*********************************** About Section Styles *************************************************/
+
+#about_anjarle{ width: 100%; height: auto; background-color: #99cc33; padding: 60px 0px; text-align: center;}
+
+#about_anjarle h1{ text-align: center; font-size: 36px; font-weight: normal; font-family: 'stymie_md_btmedium'; 
+                  color: #336633; margin:0px ; padding-top: 0%; line-height: 36px;}
+
+#about_anjarle p{ 	width: 87%; font-size: 17.99px; line-height: 20px; text-align: left; 
+                  font-family: 'sapientsansregularregular';	margin: 5% auto; color: #333;}
+
+/************ Updated on 23_Sep_16 by Amey ****/
+
+#about_anjarle h6{
+	font-weight: normal;
+	font-size: 17px;
+	font-family: 'sapientsansregularregular'; 
+	padding: 5px 0px 0px 0px;
+	background-color: ;
+	/*margin: 0% auto;*/
+	text-align: center;
+}
+#about_anjarle h6 a{
+	color: #fff;
+	background-color: #333;
+	display: block;
+	width: 200px;
+	margin: 0% auto;
+	text-align: center;
+	padding: 10px 5px;
+	transition: all 0.6s ease;
+	border-radius: 2px;
+}
+.icon_space{
+	padding-left: 2%;
+}
+#about_anjarle h6 a:hover{
+	background-color: #336633;
+	color: #fff;
+}
+
+/**********************************************/
+
+.color_text{ color: #fff;/*#99cc33;*/}
+
+#about_anjarle img{ margin: 30px auto 0px auto; float: none; width:80%; }
+
+/****************** About Kwalicon Styles **************************************/
+
+#about_kwalicon{
+	width: 100%;
+	height: auto;
+	background-color: #336633; 
+	background-image: none;
+	padding-bottom:50px;
+}
+
+.hidden_text{ display: none;}
+#btn{ 
+	display: block;
+	font-family: 'sapientsansregularregular'; 
+	font-size: 17.99px;
+	color: #99cc33;
+	margin: 1% auto;
+	width: 100px;
+	text-align: center;
+}
+#btn:hover{ cursor: pointer;}
+
+#left_box1{ width: 100%; height: auto; background-color: /*#99cc33*/; float: none;}
+
+#left_box2{ width: 100%; height: auto; background-color: /*#336633*/; float: none;}
+
+#left_box1 img{ float: none; margin: 60px 0px 60px 0px;}
+
+#left_box2 h1{ text-align: center; font-size: 36px; font-weight: normal; font-family: 'stymie_md_btmedium';  
+              color: #fff; margin: 0px 0px 30px 0px; line-height: 36px;}
+
+#right_box1{ width: 100%; height: auto; background-color: ; float: none; margin-top: 0%; color: #fff;}
+
+#right_box2{ width: 100%; height: auto; background-color: ; float: none; margin-top: 3%; color: #fff;}
+
+.about_kwalicon_text{ width: 90%; text-align: left; font-family: 'sapientsansregularregular';
+                      font-size: 17.99px; line-height: 20px; margin:10px auto; }
+
+.diff_para{ font-family: 'stymie_md_btmedium'; color: #99cc33;}
+
+/********************** Amenities Section Styles ***********************************************/
+
+
+#amenities{ 
+	width: 100%; 
+	height: auto; 
+	background-color: #99cc33;
+	background-image:none;
+	background-repeat:no-repeat;
+	background-size: cover;	
+}
+#amenities_text{ 
+	text-align: center; 
+	background-color: ; 
+	padding: 60px 0px 30px 0px; 
+}
+#amenities_text h2{	
+	font-size: 36px; 
+	font-weight: normal; 
+	font-family: 'stymie_md_btmedium'; 
+	color: #336633;  
+}
+#amenities_list_items{	
+	width: 100%; 
+	background: ;
+	height: auto;
+	padding-left: 0%;
+	padding-bottom: 60px;
+}
+.amenities_box1{	
+	float:none;
+	width: 80%;
+	/*margin-left: 5%; */
+	margin: 0px auto;
+	
+	background-color:;
+}
+.amenities_box2{	
+	float:none;
+	width: 80%;
+	/*margin-left: 5%;*/
+	margin: 0px auto;
+	background-color: ;
+}
+.amenities_box3{	
+	float:none;
+	width: 80%;
+	/*margin-left: 5%;*/
+	margin: 0px auto;
+	background-color: ;
+}
+.list{ list-style-type: square;}
+
+.color_list{ color: #336633;}
+
+#amenities_list_items ul{ text-align: left; margin-left:0%;}
+
+#amenities_list_items ul li{	
+	float: none;   
+	background-color: ; 
+	color: #fff; 
+	padding-left: 0px; 
+	font-family: 'sapientsansmediumregular';
+	font-size: 17px; 
+	line-height:30px;
+}
+#amenities_list_items ul li{ margin-bottom: 33px; /* 4.9%; */}
+/*********************** Gallery Styling *********************************************************/
+
+#gallery{ width: 100%; height: auto; background-color: #336633; 
+          background-image:none; padding: 60px 0px 60px 0px;}
+
+#gallery h2{ text-align: center; font-size: 36px; font-weight: normal; font-family: 'stymie_md_btmedium'; 
+            color: #99cc33; line-height: 46px; margin-top:0px;}
+
+#img_container{ width: ; height: auto; margin: 30px 0px 0px 0px; background-color:;}
+
+#gallery img{
+	float:none;
+	margin: 0% 0% 1% 0%; /** Changes made on 01_Oct_16 **/
+	opacity: 1;
+	transition: opacity 0.8s ease;
+	width: 70%; /** Changes made on 01_Oct_16 **/
+	border: 3px solid #e1e1e1; /** Changes made on 01_Oct_16 **/
+	border-radius: 2px; /** Changes made on 01_Oct_16 **/
+}
+#gallery img:hover{ /*opacity: 1; transition: opacity 0.8s ease; */}
+
+/************************** Contact Styling *******************************************************/
+
+#contact{ width: 100%; height: auto; margin-top:0px; padding: 60px 0px; 
+					background-color:#99cc33; background-image:none;}
+
+#contact h2{	text-align:center; font-size: 36px; font-weight: normal; font-family: 'stymie_md_btmedium'; 
+						color: #336633; line-height: 48px; margin-bottom: 35px;}
+
+#contact p{	font-size: 18px; line-height: 25px; width: 95%; margin:0px auto; text-align: center; 
+						font-family: 'sapientsansregularregular'; color: #fff;}
+
+#contact img{ width: 100%; margin-top: 30px; height: auto; text-align: center; }
+
+#contact p:first-of-type::first-line{ color: #336633;}
+#contact p:nth-of-type(2n+0){ font-family: 'sapientsansregularregular'; font-size: 24px; margin-top: 35px;}
+
+#contact p:nth-of-type(2n+0)::first-line{ font-size: 18px; color: #336633;}
+
+#contact p:last-of-type{ font-family: 'sapientsansregularregular'; font-size: 24px; margin-top: 35px; }
+
+#contact p:last-of-type::first-line{ font-size: 18px; color: #336633;}
+
+/************************** Footer Styling *******************************************************/
+
+#bottom{ width: 100%; height: auto; background-color:; position: relative;
+         background-image: none;}
+
+#footer_menu{ width: 100%; height: auto; background-color:; padding: 0% 0%; margin:0px 0px;  display:none;}
+
+#bottom img{ position: absolute; left: 0px; bottom:0; border: ; display:none;}
+
+#footer_menu ul{ list-style-type: none; overflow: hidden;}
+
+#footer_menu ul li{ float: none; width: 100%; display:block;}
+
+#footer_menu ul li a{ text-decoration: none; font-size: 18px; /*font-family: Stymie Md BT; */ font-family: 'sapientsansmediumregular'; 
+                   color: #336633; margin: 0% 0%; padding: 1% 0%; background: ; text-align: center;}
+
+#footer_menu ul li a:hover{ color: #ff9933; transition: color 0.3s ease;}
+
+#copy_text{ width: 100%; background-color: ; padding:20px 0px 2 0px 0px;}
+
+#copy_text p{ font-family: 'sapientsansregularregular'; font-size: 14px; text-align: left; width:95%; margin:0px auto; }
+/*for lightbox*/
+	.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+}
+
